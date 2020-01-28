@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{--  ini head  --}}
+@include('dosen.partials.head')
+{{--  tutup head  --}}
+
+<body class="page-header-fixed ">
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    @include('dosen.partials.headerInner')
+    <!-- END HEADER INNER -->
+</div>
+<div class="clearfix"> </div>
+<div class="page-container">
+  <!-- Start page sidebar wrapper -->
+  @include('dosen.partials.sidebar')
+  <!-- End page sidebar wrapper -->
+
+  <!-- Start page content wrapper -->
+  <div class="page-content-wrapper animated fadeInRight">
+    <div class="page-content">
+      <div class="row wrapper border-bottom page-heading">
+        <div class="col-lg-12">
+          <h2>Surat Keputusan</h2>
+          <ol class="breadcrumb">
+            <li> <a href="{{ route('dosen.index') }}">Beranda</a> </li>
+            <li> <a href="{{ route('dosen.sk.index') }}">Surat Keputusan</a> </li>
+            <li class="active"> <strong>Mengajar</strong> </li>
+          </ol>
+        </div>
+        <div class="col-lg-12"> </div>
+      </div>
+      <div class="wrapper-content ">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+              <div class="ibox-content collapse in">
+                <div class="widgets-container">
+                  <div>
+                    <table id="example" class="table  responsive nowrap table-bordered" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>No. SK</th>
+                          <th>Jenis SK</th>
+                          <th>Nama SK</th>
+                          <th>Nama Dosen (NIP)</th>
+                          <th>File</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                          <th>No</th>
+                          <th>No. SK</th>
+                          <th>Jenis SK</th>
+                          <th>Nama SK</th>
+                          <th>Nama Dosen (NIP)</th>
+                          <th>File</th>
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>XX/XX/XXXX</td>
+                          <td>Mengajar</td>
+                          <td>Mengajar Matakuliah Matematika</td>
+                          <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                          <td><button class="btn aqua btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>XX/XX/XXXX</td>
+                          <td>Mengajar</td>
+                          <td>Mengajar Matakuliah Ekonomi</td>
+                          <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                          <td><button class="btn aqua btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>XX/XX/XXXX</td>
+                          <td>Mengajar</td>
+                          <td>Mengajar Matakuliah Statistika</td>
+                          <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                          <td><button class="btn aqua btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>XX/XX/XXXX</td>
+                          <td>Mengajar</td>
+                          <td>Mengajar Matakuliah Ekonomi</td>
+                          <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                          <td><button class="btn aqua btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- start footer -->
+    @include('dosen.partials.footer')
+    </div>
+  </div>
+</div>
+{{--  script and up page  --}}
+@include('dosen.partials.script')
+{{--  end script and up page  --}}
+
+</body>
+</html>
