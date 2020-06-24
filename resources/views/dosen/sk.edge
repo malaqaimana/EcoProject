@@ -2,7 +2,7 @@
 <html lang="en">
 
 {{--  ini head  --}}
-    @include('dosen.partials.head')
+@include('dosen.partials.head')
 {{--  tutup head  --}}
 
 {{--  style khusus  --}}
@@ -11,291 +11,338 @@
 
 <body>
 
-    <!-- Begin page -->
-    <div id="wrapper">
+  <!-- Begin page -->
+  <div id="wrapper">
 
-        <!-- Top Bar Start -->
-        @include('dosen.partials.navbar')
-        <!-- Top Bar End -->
+    <!-- Top Bar Start -->
+    @include('dosen.partials.navbar')
+    <!-- Top Bar End -->
 
-        <!-- ========== Left Sidebar Start ========== -->
-        @include('dosen.partials.sidemenu')
-        <!-- Left Sidebar End -->
+    <!-- ========== Left Sidebar Start ========== -->
+    @include('dosen.partials.sidemenu')
+    <!-- Left Sidebar End -->
 
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
-        <div class="content-page">
-            <!-- Start content -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="page-title-box">
-                        <div class="row align-items-center">
-                            <div class="col-sm-6">
-                                <h4 class="page-title">{{title}}</h4>
-                            </div>
-                            <div class="col-sm-6">
-                                <ol class="breadcrumb float-right">
-                                    <li class="breadcrumb-item"><a href={{ route('dosen.index') }}>Dosen</a></li>
-                                    <li class="breadcrumb-item active">{{title}}</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <!-- end row -->
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+      <!-- Start content -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="page-title-box">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                <h4 class="page-title">{{title}}</h4>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-right">
+                  <li class="breadcrumb-item"><a href={{ route('dosen.index') }}>Dosen</a></li>
+                  <li class="breadcrumb-item active">{{title}}</li>
+                </ol>
+              </div>
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end page-title -->
+
+          <div class="row">
+            <div class="col-12">
+              <div class="card m-b-30">
+                <div class="card-body">
+                  <div class="form-group row">
+
+                    <div class="col-sm-3">
+                      <select class="form-control select2">
+                        <option>Pilih jenis SK</option>
+                        <option>Large select</option>
+                        <option>Small select</option>
+                      </select>
                     </div>
-                    <!-- end page-title -->
-                    
-                    <div class="row">
-                      <div class="col-12">
-                          <div class="card m-b-30">
-                              <div class="card-body">
-                                <div class="dropdown">
-                                  <button onclick="myFunction()" class="dropbtn">Jenis SK</button>
-                                    <div id="myDropdown" class="dropdown-content">
-                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                                    <a href="#about">About</a>
-                                    <a href="#base">Base</a>
-                                    <a href="#blog">Blog</a>
-                                    <a href="#contact">Contact</a>
-                                    <a href="#custom">Custom</a>
-                                    <a href="#support">Support</a>
-                                    <a href="#tools">Tools</a>
-                                  </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                  <div class="btn-group bootstrap-select semester form-control dropup">
-                                    <button type="button" class="btn dropdown-toggle btn-info" data-toggle="dropdown" title="-- Pilih Jenis SK --" aria-expanded="false"><span class="filter-option pull-left">-- Pilih Jenis SK --</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" style="max-height: 180px; overflow: hidden;"><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off"></div><ul class="dropdown-menu inner" role="menu" style="max-height: 136px; overflow-y: auto;"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="-- Pilih Semester --"><span class="text">-- Pilih Semester --</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1" class="active"><a tabindex="0" class="" style="" data-tokens="Semester 1"><span class="text">Semester 1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2" class=""><a tabindex="0" class="" style="" data-tokens="Semester 2"><span class="text">Semester 2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3" class=""><a tabindex="0" class="" style="" data-tokens="Semester 3"><span class="text">Semester 3</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4" class=""><a tabindex="0" class="" style="" data-tokens="Semester 4"><span class="text">Semester 4</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5" class=""><a tabindex="0" class="" style="" data-tokens="Semester 5"><span class="text">Semester 5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6" class=""><a tabindex="0" class="" style="" data-tokens="Semester 6"><span class="text">Semester 6</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7" class=""><a tabindex="0" class="" style="" data-tokens="Semester 7"><span class="text">Semester 7</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8" class=""><a tabindex="0" class="" style="" data-tokens="Semester 8"><span class="text">Semester 8</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select class="semester form-control" data-live-search="true" tabindex="-98">
-                                    <option data-tokens="-- Pilih Semester --">-- Pilih Jenis SK --</option>
-                                    <option data-tokens="Semester 1">Semester 1</option>
-                                    <option data-tokens="Semester 2">Semester 2</option>
-                                    <option data-tokens="Semester 3">Semester 3</option>
-                                    <option data-tokens="Semester 4">Semester 4</option>
-                                    <option data-tokens="Semester 5">Semester 5</option>
-                                    <option data-tokens="Semester 6">Semester 6</option>
-                                    <option data-tokens="Semester 7">Semester 7</option>
-                                    <option data-tokens="Semester 8">Semester 8</option>
-                                  </select>
-                                </div>
-                                </div>
-  
-                                  <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <thead>
-                                      <tr>
-                                        <th>No</th>
-                                        <th>No. SK</th>
-                                        <th>Jenis SK</th>
-                                        <th>Nama SK</th>
-                                        <th>Nama Dosen (NIP)</th>
-                                        <th>File</th>
-                                        <th>Status</th>
-                                      </tr>
-                                    </thead>
-                                    
-                                    <tfoot>
-                                      <tr>
-                                        <th>No</th>
-                                        <th>No. SK</th>
-                                        <th>Jenis SK</th>
-                                        <th>Nama SK</th>
-                                        <th>Nama Dosen (NIP)</th>
-                                        <th>File</th>
-                                        <th>Status</th>
-                                      </tr>
-                                    </tfoot>
-                                    
-                                    <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pengajar</td>
-                                        <td>Pengajar Matakuliah Matematika</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pembimbing</td>
-                                        <td>Pembimbing KKP</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-secondary">Menunggu persetujuan</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Penguji</td>
-                                        <td>Penguji Seminar Proposal</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pengajar</td>
-                                        <td>Pengajar Matakuliah Ekonomi</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Penguji</td>
-                                        <td>Penguji Tugas Akhir</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>6</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pembimbing</td>
-                                        <td>Pembimbing 1 Tugas Akhir</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-secondary">Menunggu persetujuan</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>7</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pengajar</td>
-                                        <td>Pengajar Matakuliah Statistika</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>8</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pembimbing</td>
-                                        <td>Pembimbing KKP</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-secondary">Menunggu persetujuan</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>9</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Penguji</td>
-                                        <td>Penguji Seminar Proposal</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>10</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pengajar</td>
-                                        <td>Pengajar Matakuliah Ekonomi</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>11</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pembimbing</td>
-                                        <td>Pembimbing 2 Tugas Akhir</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Penguji</td>
-                                        <td>Penguji Tugas Akhir</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>13</td>
-                                        <td>XX/XX/XXXX</td>
-                                        <td>Pembimbing</td>
-                                        <td>Pembimbing 1 Tugas Akhir</td>
-                                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
-                                        <td>Nama File <br> <br>
-                                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
-                                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
-                                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
-                                        </td>
-                                        <td><h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-  
-                              </div>
-                          </div>
-                      </div> <!-- end col -->
-                  </div> <!-- end row -->
-                  
-                </div>
-                <!-- container-fluid -->
+                  </div>
 
-            </>
-            <!-- content -->
-            
-            {{--  ini footer  --}}
-            @include('dosen.partials.footer')
-            {{--  ini footer  --}}
+                  <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                    style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>No. SK</th>
+                        <th>Jenis SK</th>
+                        <th>Nama SK</th>
+                        <th>Nama Dosen (NIP)</th>
+                        <th>File</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+
+                    <tfoot>
+                      <tr>
+                        <th>No</th>
+                        <th>No. SK</th>
+                        <th>Jenis SK</th>
+                        <th>Nama SK</th>
+                        <th>Nama Dosen (NIP)</th>
+                        <th>File</th>
+                        <th>Status</th>
+                      </tr>
+                    </tfoot>
+
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pengajar</td>
+                        <td>Pengajar Matakuliah Matematika</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pembimbing</td>
+                        <td>Pembimbing KKP</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-secondary">Menunggu persetujuan</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Penguji</td>
+                        <td>Penguji Seminar Proposal</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pengajar</td>
+                        <td>Pengajar Matakuliah Ekonomi</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Penguji</td>
+                        <td>Penguji Tugas Akhir</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pembimbing</td>
+                        <td>Pembimbing 1 Tugas Akhir</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-secondary">Menunggu persetujuan</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pengajar</td>
+                        <td>Pengajar Matakuliah Statistika</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pembimbing</td>
+                        <td>Pembimbing KKP</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-secondary">Menunggu persetujuan</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Penguji</td>
+                        <td>Penguji Seminar Proposal</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pengajar</td>
+                        <td>Pengajar Matakuliah Ekonomi</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pembimbing</td>
+                        <td>Pembimbing 2 Tugas Akhir</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Penguji</td>
+                        <td>Penguji Tugas Akhir</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-success">Disetujui</span> </h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>XX/XX/XXXX</td>
+                        <td>Pembimbing</td>
+                        <td>Pembimbing 1 Tugas Akhir</td>
+                        <td>Nama Dosen (XXXXXXXXXXXXX)</td>
+                        <td>Nama File <br> <br>
+                          <button class="btn btn-warning waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Lihat</span></button>
+                          <button class="btn btn-info waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-edit"></i>&nbsp;&nbsp;<span class="bold">Ubah</span></button>
+                          <button class="btn btn-success waves-effect waves-light btn-sm" type="button"><i
+                              class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Unduh</span></button>
+                        </td>
+                        <td>
+                          <h5> <span class="badge badge-pill badge-danger">Ditolak</span> </h5>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div> <!-- end col -->
+          </div> <!-- end row -->
 
         </div>
-        <!-- ============================================================== -->
-        <!-- End Right content here -->
-        <!-- ============================================================== -->
+        <!-- container-fluid -->
+
+        </>
+        <!-- content -->
+
+        {{--  ini footer  --}}
+        @include('dosen.partials.footer')
+        {{--  ini footer  --}}
+
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Right content here -->
+      <!-- ============================================================== -->
 
     </div>
     <!-- END wrapper -->
@@ -303,11 +350,16 @@
     {{--  ini script  --}}
     @include('dosen.partials.script')
     {{--  ini script  --}}
-    
+
     {{--  script khusus  --}}
     <script src="{{ assetsUrl('customs/') }}js/customs.js"></script>
-    
-    
+    <script>
+      $(document).ready(function () {
+        $('.select2').select2();
+      });
+
+    </script>
+
 </body>
 
 </html>
