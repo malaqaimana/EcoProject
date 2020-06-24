@@ -1,0 +1,98 @@
+<div class="topbar">
+
+    <!-- LOGO -->
+    <div class="topbar-left">
+        <a href="index.html" class="logo">
+            <span class="logo-light">
+                <img src="{{ assetsUrl('staxo/') }}assets/images/logo_unsyiah.png" height="20" class="mr-2" alt="" /> SIM-FEB
+                </span>
+            <span class="logo-sm">
+                <img src="{{ assetsUrl('staxo/') }}assets/images/logo_unsyiah.png" height="30" alt="" />
+                </span>
+        </a>
+    </div>
+
+    <nav class="navbar-custom">
+        <ul class="navbar-right list-inline float-right mb-0">
+
+            <!-- full screen -->
+            <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
+                <a class="nav-link waves-effect" href="#" id="btn-fullscreen">
+                    <i class="mdi mdi-arrow-expand-all noti-icon"></i>
+                </a>
+            </li>
+
+            <!-- notification -->
+            <li class="dropdown notification-list list-inline-item">
+                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <i class="mdi mdi-bell-outline noti-icon"></i>
+                    <span class="badge badge-pill badge-danger noti-icon-badge">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated dropdown-menu-lg px-1">
+                    <!-- item-->
+                    <h6 class="dropdown-item-text">
+                            Notifikasi
+                        </h6>
+                    <div class="slimscroll notification-item-list">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon bg-success"><i class="icon-paper-sheet"></i></div>
+                            <p class="notify-details"><b>Surat Keputusan</b><span class="text-muted">Anda telah ditandai dalam 1 surat keputusan</span></p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon bg-danger"><i class="fas fa-database"></i></div>
+                            <p class="notify-details"><b>Aset</b><span class="text-muted">2 aset baru telah ditambahkan oleh admin</span></p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="notify-icon bg-info"><i class="fas fa-camera-retro"></i></div>
+                            <p class="notify-details"><b>Kegiatan</b><span class="text-muted">1 kegiatan baru telah ditambahkan oleh admin</span></p>
+                        </a>
+
+                    </div>
+                    <!-- All-->
+                    <a href="javascript:void(0);" class="dropdown-item text-center notify-all text-primary">
+                            Lihat Semua Notifikasi <i class="fi-arrow-right"></i>
+                        </a>
+                </div>
+            </li>
+
+            <li class="dropdown notification-list list-inline-item">
+                <div class="dropdown notification-list nav-pro-img">
+                    <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <b> Nama Dosen</b> <span class="badge badge-pill badge-success">Dosen</span>
+                        <img src="{{ assetsUrl('staxo/') }}assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profil </a>
+                        <div class="dropdown-divider"></div> 
+                        <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Keluar</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+        <ul class="list-inline menu-left mb-0">
+            <li class="float-left">
+                <button class="button-menu-mobile open-left waves-effect">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </li>
+            <li class="d-none d-md-inline-block">
+                <form role="search" class="app-search">
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control" placeholder="Search..">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </li>
+        </ul>
+
+    </nav>
+
+</div>

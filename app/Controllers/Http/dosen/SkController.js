@@ -2,19 +2,11 @@
 
 class SkController {
     index({request, response, view}){
-        return view.render('dosen.sk')
-    }
-
-    pengajar({request, response, view}){
-        return view.render('dosen.skPengajar')
-    }
-
-    penguji({request, response, view}){
-        return view.render('dosen.skPenguji')
-    }
-
-    pembimbing({request, response, view}){
-        return view.render('dosen.skPembimbing')
+        let title = 'Surat Keputusan'   //let = inisialisasi variabel
+        return view.render('dosen.sk',{
+            title   //pake {} buat kirim variabel atau data
+        })
+        
     }
 }
 
