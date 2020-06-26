@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{--  ini head  --}}
+@include('dosen.partials.head')
+{{--  tutup head  --}}
+
+{{--  style khusus  --}}
+<link href="{{ assetsUrl('customs/') }}css/customs.css" rel="stylesheet" type="text/css">
+
+
+<body>
+
+  <!-- Begin page -->
+  <div id="wrapper">
+
+    <!-- Top Bar Start -->
+    @include('dosen.partials.navbar')
+    <!-- Top Bar End -->
+
+    <!-- ========== Left Sidebar Start ========== -->
+    @include('dosen.partials.sidemenu')
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+      <!-- Start content -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="page-title-box">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                <h4 class="page-title">{{title}}</h4>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-right">
+                  <li class="breadcrumb-item"><a href={{ route('dosen.index') }}>Dosen</a></li>
+                  <li class="breadcrumb-item active">{{title}}</li>
+                </ol>
+              </div>
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end page-title -->
+
+          <div class="row">
+            <div class="col-12">
+              <div class="card m-b-30">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <div class="col-sm-3">
+                      <select class="form-control select2">
+                        <option>--Pilih Prodi--</option>
+                        <option>Large select</option>
+                        <option>Small select</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3">
+                      <select class="form-control select2">
+                        <option>--Pilih Semester--</option>
+                        <option data-tokens="Semester 1">Semester 1</option>
+                        <option data-tokens="Semester 2">Semester 2</option>
+                        <option data-tokens="Semester 3">Semester 3</option>
+                        <option data-tokens="Semester 4">Semester 4</option>
+                        <option data-tokens="Semester 5">Semester 5</option>
+                        <option data-tokens="Semester 6">Semester 6</option>
+                        <option data-tokens="Semester 7">Semester 7</option>
+                        <option data-tokens="Semester 8">Semester 8</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                    style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Prodi</th>
+                        <th>Semester</th>
+                        <th>Kode Mata Kuliah</th>
+                        <th>Nama Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Prasyarat</th>
+                        <th>Detail</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>No</th>
+                        <th>Prodi</th>
+                        <th>Semester</th>
+                        <th>Kode Mata Kuliah</th>
+                        <th>Nama Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Prasyarat</th>
+                        <th>Detail</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Perpajakan</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Perpajakan</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Perpajakan</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Perpajakan</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Perpajakan</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>Ekonomi Manajemen (EKM)</td>
+                        <td>Semester XX</td>
+                        <td>XXX</td>
+                        <td>Matakuliah Matematika</td>
+                        <td>3 (2-1)</td>
+                        <td>XXX</td>
+                        <td><a class="btn btn-round btn-warning btn-sm" href="{{ route('dosen.matakuliah.pilihan') }}"><i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Detail</span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div> <!-- end col -->
+          </div> <!-- end row -->
+
+        </div>
+        <!-- container-fluid -->
+
+        </>
+        <!-- content -->
+
+        {{--  ini footer  --}}
+        @include('dosen.partials.footer')
+        {{--  ini footer  --}}
+
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Right content here -->
+      <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    {{--  ini script  --}}
+    @include('dosen.partials.script')
+    {{--  ini script  --}}
+
+    {{--  script khusus  --}}
+    <script src="{{ assetsUrl('customs/') }}js/customs.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.select2').select2();
+      });
+
+    </script>
+
+</body>
+
+</html>
