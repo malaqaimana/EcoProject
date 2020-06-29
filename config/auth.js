@@ -1,7 +1,7 @@
-'use strict'
+"use strict";
 
 /** @type {import('@adonisjs/framework/src/Env')} */
-const Env = use('Env')
+const Env = use("Env");
 
 module.exports = {
   /*
@@ -16,7 +16,7 @@ module.exports = {
   | Available Serializers - lucid, database
   |
   */
-  authenticator: 'session',
+  authenticator: "session",
 
   /*
   |--------------------------------------------------------------------------
@@ -27,21 +27,28 @@ module.exports = {
   | Session authentication is always persistent.
   |
   */
-  
-  mahasiswa: {
-    serializer: 'lucid',
-    model: 'App/Models/Mahasiswa',
-    scheme: 'session',
-    uid: 'npm',
-    password: 'password'
+  session: {
+    serializer: "lucid",
+    model: "App/Models/User",
+    scheme: "session",
+    uid: "email",
+    password: "password",
   },
-  
+
+  mahasiswa: {
+    serializer: "lucid",
+    model: "App/Models/Mahasiswa",
+    scheme: "session",
+    uid: "npm",
+    password: "password",
+  },
+
   dosen: {
-    serializer: 'lucid',
-    model: 'App/Models/Dosen',
-    scheme: 'session',
-    uid: 'nip',
-    password: 'password'
+    serializer: "lucid",
+    model: "App/Models/Dosen",
+    scheme: "session",
+    uid: "nip",
+    password: "password",
   },
 
   /*
@@ -58,11 +65,11 @@ module.exports = {
   |
   */
   basic: {
-    serializer: 'lucid',
-    model: 'App/Models/User',
-    scheme: 'basic',
-    uid: 'email',
-    password: 'password'
+    serializer: "lucid",
+    model: "App/Models/User",
+    scheme: "basic",
+    uid: "email",
+    password: "password",
   },
 
   /*
@@ -75,14 +82,14 @@ module.exports = {
   |
   */
   jwt: {
-    serializer: 'lucid',
-    model: 'App/Models/User',
-    scheme: 'jwt',
-    uid: 'email',
-    password: 'password',
+    serializer: "lucid",
+    model: "App/Models/User",
+    scheme: "jwt",
+    uid: "email",
+    password: "password",
     options: {
-      secret: Env.get('APP_KEY')
-    }
+      secret: Env.get("APP_KEY"),
+    },
   },
 
   /*
@@ -94,10 +101,10 @@ module.exports = {
   |
   */
   api: {
-    serializer: 'lucid',
-    model: 'App/Models/User',
-    scheme: 'api',
-    uid: 'email',
-    password: 'password'
-  }
-}
+    serializer: "lucid",
+    model: "App/Models/User",
+    scheme: "api",
+    uid: "email",
+    password: "password",
+  },
+};
