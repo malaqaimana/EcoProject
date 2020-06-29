@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{--  ini head  --}}
+    @include('dosen.partials.head')
+{{--  tutup head  --}}
+
+{{--  style khusus  --}}
+<link href="{{ assetsUrl('customs/') }}css/customs.css" rel="stylesheet" type="text/css">
+
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        @include('dosen.partials.navbar')
+        <!-- Top Bar End -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        @include('dosen.partials.sidemenu')
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">{{title}}</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-right">
+                                    <li class="breadcrumb-item"><a href={{ route('dosen.index') }}>Dosen</a></li>
+                                    <li class="breadcrumb-item active">{{title}}</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end page-title -->
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+    
+                                    <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                              <th>No</th>
+                                              <th>Nama Ruang</th>
+                                              <th>Jenis Aset</th>
+                                              <th>Meja</th>
+                                              <th>Lemari</th>
+                                              <th>Kursi</th>
+                                              <th>Foto</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                              <th>No</th>
+                                              <th>Nama Ruang</th>
+                                              <th>Jenis Aset</th>
+                                              <th>Meja</th>
+                                              <th>Lemari</th>
+                                              <th>Kursi</th>
+                                              <th>Foto</th>
+                                            </tr>
+                                        </tfoot>
+                                        
+                                        <tbody>
+                                            <tr>
+                                              <td>1</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Kantor</td>
+                                              <td>10</td>
+                                              <td>1</td>
+                                              <td>20</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>2</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Laboratorium</td>
+                                              <td>19</td>
+                                              <td>1</td>
+                                              <td>18</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>3</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Kantor</td>
+                                              <td>5</td>
+                                              <td>1</td>
+                                              <td>10</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>4</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Kantor</td>
+                                              <td>10</td>
+                                              <td>1</td>
+                                              <td>10</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>5</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Laboratorium</td>
+                                              <td>10</td>
+                                              <td>1</td>
+                                              <td>20</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>6</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Kantor</td>
+                                              <td>10</td>
+                                              <td>3</td>
+                                              <td>20</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>7</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Kantor</td>
+                                              <td>10</td>
+                                              <td>5</td>
+                                              <td>20</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>8</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Laboratorium</td>
+                                              <td>5</td>
+                                              <td>2</td>
+                                              <td>10</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>9</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Kantor</td>
+                                              <td>9</td>
+                                              <td>0</td>
+                                              <td>18</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>10</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Laboratorium</td>
+                                              <td>11</td>
+                                              <td>0</td>
+                                              <td>21</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td>11</td>
+                                              <td>Ruang XX XX XX</td>
+                                              <td>Aset Laboratorium</td>
+                                              <td>8</td>
+                                              <td>2</td>
+                                              <td>14</td>
+                                              <td> <a href="{{ route('dosen.aset.galeri') }}" class="btn aqua btn-sm" type="button"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;<span class="bold">Lihat Galery</span></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+    
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->  
+                  
+                </div>
+                <!-- container-fluid -->
+
+            </>
+            <!-- content -->
+            
+            {{--  ini footer  --}}
+            @include('dosen.partials.footer')
+            {{--  ini footer  --}}
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    {{--  ini script  --}}
+    @include('dosen.partials.script')
+    {{--  ini script  --}}
+    
+    {{--  script khusus  --}}
+    <script src="{{ assetsUrl('customs/') }}js/customs.js"></script>
+    
+    
+</body>
+
+</html>

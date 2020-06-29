@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{--  ini head  --}}
+    @include('dosen.partials.head')
+{{--  tutup head  --}}
+
+{{--  style khusus  --}}
+{{--  <link href = "{{ assetsUrl('staxo/') }}css/customs.css" rel = "stylesheet">  --}}
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        @include('dosen.partials.navbar')
+        <!-- Top Bar End -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        @include('dosen.partials.sidemenu')
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">{{title}} Ruang XX XX XX</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-right">
+                                    <li class="breadcrumb-item"><a href={{ route('dosen.index') }}>Dosen</a></li>
+                                    <li class="breadcrumb-item"><a href={{ route('dosen.aset.index') }}>Aset</a></li>
+                                    <li class="breadcrumb-item active">{{title}}</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end page-title -->
+                    
+                    <div class="row">
+                        <div class="col-12">
+                          <div class="card m-b-30">
+                            <div class="card-body">
+                                
+                                <div class="popup-gallery">
+                                    <a class="float-left" href="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" title="Gambar 1">
+                                        <div class="img-fluid d-block mx-auto">
+                                            <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="" width="300">
+                                        </div>
+                                    </a>
+                                    <a class="float-left" href="{{ assetsUrl('staxo/') }}assets/images/small/img-2.jpg" title="Gambar 2">
+                                        <div class="img-fluid d-block mx-auto">
+                                            <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-2.jpg" alt="" width="300">
+                                        </div>
+                                    </a>
+                                    <a class="float-left" href="{{ assetsUrl('staxo/') }}assets/images/small/img-3.jpg" title="Gambar 3">
+                                        <div class="img-fluid d-block mx-auto">
+                                            <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-3.jpg" alt="" width="300">
+                                        </div>
+                                    </a>
+                                    <a class="float-left" href="{{ assetsUrl('staxo/') }}assets/images/small/img-4.jpg" title="Gambar 4">
+                                        <div class="img-fluid d-block mx-auto">
+                                            <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-4.jpg" alt="" width="300">
+                                        </div>
+                                    </a>
+                                    <a class="float-left" href="{{ assetsUrl('staxo/') }}assets/images/small/img-5.jpg" title="Gambar 5">
+                                        <div class="img-fluid d-block mx-auto">
+                                            <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-5.jpg" alt="" width="300">
+                                        </div>
+                                    </a>
+                                    <a class="float-left" href="{{ assetsUrl('staxo/') }}assets/images/small/img-6.jpg" title="Gambar 6">
+                                        <div class="img-fluid d-block mx-auto">
+                                            <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-6.jpg" alt="" width="300">
+                                        </div>
+                                    </a>
+                                </div>
+            
+                            </div>
+                          </div>
+                        </div> <!-- end col -->
+                      </div> <!-- end row -->
+                    
+                  
+                </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- content -->
+            
+            {{--  ini footer  --}}
+            @include('dosen.partials.footer')
+            {{--  ini footer  --}}
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    {{--  ini script  --}}
+    @include('dosen.partials.script')
+    {{--  ini script  --}}
+    
+    
+    
+</body>
+
+</html>

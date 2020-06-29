@@ -1,0 +1,652 @@
+@layout('crud.base')
+@yield('content')
+<section class="main-section">
+  <div class="page-content-wrapper animated fadeInRight">
+    <div class="page-content">
+      <div class="row wrapper border-bottom page-heading">
+        <div class="col-lg-12">
+          <h2>Asset</h2>
+        </div>
+
+      </div>
+      <div class="wrapper-content ">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+              <div class="ibox-title">
+                <h5>Tabel Asset</h5>
+              </div>
+              <div class="ibox-content collapse in">
+                <div class="widgets-container">
+                  <div >
+                    <table id="example" class="table  responsive nowrap table-bordered" cellspacing="0" width="100%">
+                      <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Jenis Asset</th>
+                        <th>Nama Ruang</th>
+                        <th>Kursi</th>
+                        <th>Meja</th>
+                        <th>Lemari</th>
+                        <th>Foto</th>
+                        <th>Aksi</th>
+                      </tr>
+                      </thead>
+                      <tfoot>
+                      <tr>
+                        <th>No</th>
+                        <th>Jenis Asset</th>
+                        <th>Nama Ruang</th>
+                        <th>Kursi</th>
+                        <th>Meja</th>
+                        <th>Lemari</th>
+                        <th>Foto</th>
+                        <th>Aksi</th>
+                      </tr>
+                      </tfoot>
+                      <tbody>
+                      <tr>
+                        <td>Jordan Belfort</td>
+                        <td>System Architect</td>
+                        <td>London</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Naomi Lapaglia</td>
+                        <td>Accountant</td>
+                        <td>London</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Auckland Straight Line Host</td>
+                        <td>Junior Technical Author</td>
+                        <td>London</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Donnie Azoff</td>
+                        <td>Senior Javascript Developer</td>
+                        <td>London</td>
+                        <td>22</td>
+                        <td>2012/03/29</td>
+                        <td>$433,060</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Mark Hanna</td>
+                        <td>Accountant</td>
+                        <td>London</td>
+                        <td>33</td>
+                        <td>2008/11/28</td>
+                        <td>$162,700</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <td>Jean-Jacques Saurel</td>
+                        <td>Integration Specialist</td>
+                        <td>London</td>
+                        <td>61</td>
+                        <td>2012/12/02</td>
+                        <td>$372,000</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                      <td>Jean-Jacques Saurel</td>
+                      <td>Integration Specialist</td>
+                      <td>London</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                      <td>2011/04/25</td>
+                      <td>$320,800</td>
+                      </tr>
+                      <tr>
+                      <td>Jean-Jacques Saurel</td>
+                      <td>Integration Specialist</td>
+                      <td>London</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                      <td>2011/04/25</td>
+                      <td>$320,800</td>
+                      </tr>
+                      <tr>
+                      <td>Jean-Jacques Saurel</td>
+                      <td>Integration Specialist</td>
+                      <td>London</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                      <td>2011/04/25</td>
+                      <td>$320,800</td>
+                      </tr>
+                      <tr>
+                      <td>Jean-Jacques Saurel</td>
+                      <td>Integration Specialist</td>
+                      <td>London</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>$372,000</td>
+                      <td>2011/04/25</td>
+                      <td>$320,800</td>
+                      </tr>
+                      <!--<tr>-->
+                      <!--<td>Patrick Denham</td>-->
+                      <!--<td>Sales Assistant</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>59</td>-->
+                      <!--<td>2012/08/06</td>-->
+                      <!--<td>$137,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Teresa Petrillo</td>-->
+                      <!--<td>Integration Specialist</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>55</td>-->
+                      <!--<td>2010/10/14</td>-->
+                      <!--<td>$327,900</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Brad</td>-->
+                      <!--<td>Javascript Developer</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>39</td>-->
+                      <!--<td>2009/09/15</td>-->
+                      <!--<td>$205,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Max Belfort</td>-->
+                      <!--<td>Software Engineer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>23</td>-->
+                      <!--<td>2008/12/13</td>-->
+                      <!--<td>$103,600</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Manny Riskin</td>-->
+                      <!--<td>Office Manager</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>30</td>-->
+                      <!--<td>2008/12/19</td>-->
+                      <!--<td>$90,560</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Aunt Emma</td>-->
+                      <!--<td>Support Lead</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>22</td>-->
+                      <!--<td>2013/03/03</td>-->
+                      <!--<td>$342,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Chantalle</td>-->
+                      <!--<td>Regional Director</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>36</td>-->
+                      <!--<td>2008/10/16</td>-->
+                      <!--<td>$470,600</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Nicky "Rugrat" Koskoff</td>-->
+                      <!--<td>Senior Marketing Designer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>43</td>-->
+                      <!--<td>2012/12/18</td>-->
+                      <!--<td>$313,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Captain Ted Beecham</td>-->
+                      <!--<td>Regional Director</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>19</td>-->
+                      <!--<td>2010/03/17</td>-->
+                      <!--<td>$385,750</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Leah Belfort</td>-->
+                      <!--<td>Marketing Designer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>66</td>-->
+                      <!--<td>2012/11/27</td>-->
+                      <!--<td>$198,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Toby Welch</td>-->
+                      <!--<td>Chief Financial Officer (CFO)</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>64</td>-->
+                      <!--<td>2010/06/09</td>-->
+                      <!--<td>$725,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Chester Ming</td>-->
+                      <!--<td>Systems Administrator</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>59</td>-->
+                      <!--<td>2009/04/10</td>-->
+                      <!--<td>$237,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Alden "Sea Otter" Kupferberg</td>-->
+                      <!--<td>Software Engineer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>41</td>-->
+                      <!--<td>2012/10/13</td>-->
+                      <!--<td>$132,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Janet</td>-->
+                      <!--<td>Personnel Lead</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>35</td>-->
+                      <!--<td>2012/09/26</td>-->
+                      <!--<td>$217,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Robbie </td>-->
+                      <!--<td>Development Lead</td>-->
+                      <!--<td>Singapore</td>-->
+                      <!--<td>30</td>-->
+                      <!--<td>2011/09/03</td>-->
+                      <!--<td>$345,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Steve Madden</td>-->
+                      <!--<td>Chief Marketing Officer (CMO)</td>-->
+                      <!--<td>Edinburgh</td>-->
+                      <!--<td>40</td>-->
+                      <!--<td>2009/06/25</td>-->
+                      <!--<td>$675,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Kimmie Belzer</td>-->
+                      <!--<td>Pre-Sales Support</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>21</td>-->
+                      <!--<td>2011/12/12</td>-->
+                      <!--<td>$106,450</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Hildy Azoff</td>-->
+                      <!--<td>Sales Assistant</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>23</td>-->
+                      <!--<td>2010/09/20</td>-->
+                      <!--<td>$85,600</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Lucas Solomon</td>-->
+                      <!--<td>Chief Executive Officer (CEO)</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>47</td>-->
+                      <!--<td>2009/10/09</td>-->
+                      <!--<td>$1,200,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Honorary Samantha Stogel</td>-->
+                      <!--<td>Developer</td>-->
+                      <!--<td>Singapore</td>-->
+                      <!--<td>42</td>-->
+                      <!--<td>2010/12/22</td>-->
+                      <!--<td>$92,575</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Nolan Drager</td>-->
+                      <!--<td>Regional Director</td>-->
+                      <!--<td>Edinburgh</td>-->
+                      <!--<td>28</td>-->
+                      <!--<td>2010/11/14</td>-->
+                      <!--<td>$357,650</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Jenette Caldwell</td>-->
+                      <!--<td>Software Engineer</td>-->
+                      <!--<td>Tokyo</td>-->
+                      <!--<td>28</td>-->
+                      <!--<td>2011/06/07</td>-->
+                      <!--<td>$206,850</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Jennifer Acosta</td>-->
+                      <!--<td>Chief Operating Officer (COO)</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>48</td>-->
+                      <!--<td>2010/03/11</td>-->
+                      <!--<td>$850,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Jennifer Chang</td>-->
+                      <!--<td>Regional Marketing</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>20</td>-->
+                      <!--<td>2011/08/14</td>-->
+                      <!--<td>$163,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Jessica E. Summerville</td>-->
+                      <!--<td>Integration Specialist</td>-->
+                      <!--<td>Tokyo</td>-->
+                      <!--<td>37</td>-->
+                      <!--<td>2011/06/02</td>-->
+                      <!--<td>$95,400</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Jonas Alexander</td>-->
+                      <!--<td>Developer</td>-->
+                      <!--<td>Tokyo</td>-->
+                      <!--<td>53</td>-->
+                      <!--<td>2009/10/22</td>-->
+                      <!--<td>$114,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Lael Greer</td>-->
+                      <!--<td>Technical Author</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>27</td>-->
+                      <!--<td>2011/05/07</td>-->
+                      <!--<td>$145,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Martena Mccray</td>-->
+                      <!--<td>Team Leader</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>22</td>-->
+                      <!--<td>2008/10/26</td>-->
+                      <!--<td>$235,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Michael Bruce</td>-->
+                      <!--<td>Post-Sales support</td>-->
+                      <!--<td>Tokyo</td>-->
+                      <!--<td>46</td>-->
+                      <!--<td>2011/03/09</td>-->
+                      <!--<td>$324,050</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Michael Silva</td>-->
+                      <!--<td>Marketing Designer</td>-->
+                      <!--<td>Singapore</td>-->
+                      <!--<td>47</td>-->
+                      <!--<td>2009/12/09</td>-->
+                      <!--<td>$85,675</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Michelle House</td>-->
+                      <!--<td>Office Manager</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>51</td>-->
+                      <!--<td>2008/12/16</td>-->
+                      <!--<td>$164,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Mike Loreipsum</td>-->
+                      <!--<td>Secretary</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>41</td>-->
+                      <!--<td>2010/02/12</td>-->
+                      <!--<td>$109,850</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Olivia Liang</td>-->
+                      <!--<td>Financial Controller</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>62</td>-->
+                      <!--<td>2009/02/14</td>-->
+                      <!--<td>$452,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Olivia Wenscombe</td>-->
+                      <!--<td>Office Manager</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>37</td>-->
+                      <!--<td>2008/12/11</td>-->
+                      <!--<td>$136,200</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Prescott Bartlett</td>-->
+                      <!--<td>Director</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>65</td>-->
+                      <!--<td>2008/09/26</td>-->
+                      <!--<td>$645,750</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Quinn Flynn</td>-->
+                      <!--<td>Support Engineer</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>64</td>-->
+                      <!--<td>2011/02/03</td>-->
+                      <!--<td>$234,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Rhona Davidson</td>-->
+                      <!--<td>Software Engineer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>38</td>-->
+                      <!--<td>2011/05/03</td>-->
+                      <!--<td>$163,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Robert Angier</td>-->
+                      <!--<td>Support Engineer</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>37</td>-->
+                      <!--<td>2009/08/19</td>-->
+                      <!--<td>$139,575</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Sakura Yamamoto</td>-->
+                      <!--<td>Developer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>61</td>-->
+                      <!--<td>2013/08/11</td>-->
+                      <!--<td>$98,540</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Serge Baldwin</td>-->
+                      <!--<td>Support Engineer</td>-->
+                      <!--<td>Edinburgh</td>-->
+                      <!--<td>47</td>-->
+                      <!--<td>2009/07/07</td>-->
+                      <!--<td>$87,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Shad Decker</td>-->
+                      <!--<td>Data Coordinator</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>64</td>-->
+                      <!--<td>2012/04/09</td>-->
+                      <!--<td>$138,575</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Shou Itou</td>-->
+                      <!--<td>Software Engineer</td>-->
+                      <!--<td>New York</td>-->
+                      <!--<td>63</td>-->
+                      <!--<td>2010/01/04</td>-->
+                      <!--<td>$125,250</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Sonya Frost</td>-->
+                      <!--<td>Software Engineer</td>-->
+                      <!--<td>Sidney</td>-->
+                      <!--<td>56</td>-->
+                      <!--<td>2012/06/01</td>-->
+                      <!--<td>$115,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Suki Burks</td>-->
+                      <!--<td>Junior Javascript Developer</td>-->
+                      <!--<td>Edinburgh</td>-->
+                      <!--<td>43</td>-->
+                      <!--<td>2013/02/01</td>-->
+                      <!--<td>$75,650</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Tatyana Fitzpatrick</td>-->
+                      <!--<td>Sales Assistant</td>-->
+                      <!--<td>London</td>-->
+                      <!--<td>46</td>-->
+                      <!--<td>2011/12/06</td>-->
+                      <!--<td>$145,600</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Thor Walton</td>-->
+                      <!--<td>Regional Director</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>47</td>-->
+                      <!--<td>2011/03/21</td>-->
+                      <!--<td>$356,250</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Tiger Nixon</td>-->
+                      <!--<td>Systems Administrator</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>21</td>-->
+                      <!--<td>2009/02/27</td>-->
+                      <!--<td>$103,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Timothy Mooney</td>-->
+                      <!--<td>Developer</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>30</td>-->
+                      <!--<td>2010/07/14</td>-->
+                      <!--<td>$86,500</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Unity Butler</td>-->
+                      <!--<td>Regional Director</td>-->
+                      <!--<td>San Francisco</td>-->
+                      <!--<td>51</td>-->
+                      <!--<td>2008/11/13</td>-->
+                      <!--<td>$183,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Zenaida Frank</td>-->
+                      <!--<td>Javascript Developer</td>-->
+                      <!--<td>Sidney</td>-->
+                      <!--<td>29</td>-->
+                      <!--<td>2011/06/27</td>-->
+                      <!--<td>$183,000</td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                      <!--<td>Zorita Serrano</td>-->
+                      <!--<td>Customer Support</td>-->
+                      <!--<td>Edinburgh</td>-->
+                      <!--<td>27</td>-->
+                      <!--<td>2011/01/25</td>-->
+                      <!--<td>$112,000</td>-->
+                      <!--</tr>-->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn aqua" style="float: right;"><a href="{{ route('Todo.tambahasset') }}">Tambah Daftar</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var dataSet = [
+      ["Jordan Belfort", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],
+      ["Naomi Lapaglia", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750"],
+      ["Auckland Straight Line Host", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000"],
+      ["Donnie Azoff", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060"],
+      ["Mark Hanna", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700"],
+      ["Jean-Jacques Saurel", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000"],
+      ["Patrick Denham", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500"],
+      ["Teresa Petrillo", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900"],
+      ["Brad", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500"],
+      ["Max Belfort", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600"],
+      ["Manny Riskin", "Office Manager", "London", "3814", "2008/12/19", "$90,560"],
+      ["Aunt Emma", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000"],
+      ["Chantalle", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600"],
+      ["Nicky 'Rugrat' Koskoff", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500"],
+      ["Captain Ted Beecham", "Regional Director", "London", "1965", "2010/03/17", "$385,750"],
+      ["Leah Belfort", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500"],
+      ["Toby Welch", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000"],
+      ["Chester Ming", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500"],
+      ["Alden 'Sea Otter' Kupferberg", "Software Engineer", "London", "2558", "2012/10/13", "$132,000"],
+      ["Janet", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500"],
+      ["Robbie ", "Development Lead", "New York", "1937", "2011/09/03", "$345,000"],
+      ["Steve Madden", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000"],
+      ["Kimmie Belzer", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450"],
+      ["Hildy Azoff", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600"],
+      ["Lucas Solomon", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000"],
+      ["Honorary Samantha Stogel", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575"],
+      ["Nolan Drager", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650"],
+      ["Jenette Caldwell", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850"],
+      ["Jennifer Acosta", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000"],
+      ["Jennifer Chang", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000"],
+      ["Jessica E. Summerville", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400"],
+      ["Jonas Alexander", "Developer", "London", "6832", "2009/10/22", "$114,500"],
+      ["Lael Greer", "Technical Author", "London", "3606", "2011/05/07", "$145,000"],
+      ["Martena Mccray", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500"],
+      ["Michael Bruce", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050"],
+      ["Michael Silva", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675"]
+
+    ];
+    $(document).ready(function() {
+      // Flexible table
+
+      $('#example').DataTable();
+
+      // Scroll Horizontal example
+
+      var table = $('#example').DataTable({
+        responsive: true,
+        paging: false,
+        fixedHeader: {
+          headerOffset: 40
+        }
+      });
+
+      // Check Click row
+
+      var table = $('#example').DataTable();
+      $('#example tbody').on('click', 'tr', function () {
+        var data = membimbing.row(this).data();
+        alert('You clicked on ' + data[0] + '\'s row');
+      });
+
+      // DataTable
+      var table = $('#example').DataTable();
+
+      // Apply the search
+      mengajar.columns().every(function() {
+        var that = this;
+
+        $('input', this.footer()).on('keyup change', function() {
+          if (that.search() !== this.value) {
+            that
+              .search(this.value)
+              .draw();
+          }
+        });
+      });
+
+    });
+
+  </script>
+</section>
+@endyield

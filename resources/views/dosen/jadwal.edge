@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{--  ini head  --}}
+    @include('dosen.partials.head')
+{{--  tutup head  --}}
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        @include('dosen.partials.navbar')
+        <!-- Top Bar End -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        @include('dosen.partials.sidemenu')
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">{{title}}</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-right">
+                                    <li class="breadcrumb-item"><a href="{{ route('dosen.index') }}">Dosen</a></li>
+                                    <li class="breadcrumb-item active">{{title}}</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end page-title -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+    
+                                    <div class="row">
+    
+                                        <div id='calendar' class="col-xl-12 col-lg-12 col-md-12"></div>
+    
+                                    </div>
+                                    <!-- end row -->
+    
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row --> 
+
+                </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- content -->
+            
+            {{--  ini footer  --}}
+            @include('dosen.partials.footer')
+            {{--  ini footer  --}}
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    {{--  ini script  --}}
+    @include('dosen.partials.script')
+    {{--  ini script  --}}
+
+</body>
+
+</html>
