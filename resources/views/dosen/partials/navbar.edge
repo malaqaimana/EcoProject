@@ -63,14 +63,14 @@
             <li class="dropdown notification-list list-inline-item">
                 <div class="dropdown notification-list nav-pro-img">
                     <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <b> Nama Dosen</b> <span class="badge badge-pill badge-success">Dosen</span>
+                        <b> {{ user.nama }}</b> <span class="badge badge-pill badge-success">Dosen</span>
                         <img src="{{ assetsUrl('staxo/') }}assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                         <!-- item-->
                         <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profil </a>
                         <div class="dropdown-divider"></div> 
-                        <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Keluar</a>
+                        <a class="dropdown-item text-danger" href={{ route('logout.akun') }}><i class="mdi mdi-power text-danger"></i> Keluar</a>
                     </div>
                 </div>
             </li>

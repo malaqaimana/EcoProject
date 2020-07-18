@@ -2,75 +2,78 @@
 <html lang="en">
 
 {{--  ini head  --}}
-    @include('user.partials.head')
+@include('user.partials.head')
 {{--  tutup head  --}}
 
 <body>
 
-    <!-- Begin page -->
-    <div class="accountbg"></div>
-    
-    <div class="wrapper-page">
-            <div class="card card-pages shadow-none">
+  <!-- Begin page -->
+  <div class="accountbg"></div>
 
-                <div class="card-body">
-                    <div class="text-center m-t-0 m-b-15">
-                            <a href="index.html" class="logo logo-admin"><img src="{{ assetsUrl('staxo/') }}assets/images/logo_unsyiah.png" alt="" height="50"></a>
-                    </div>
-                    <h5 class="font-18 text-center">SIM-FEB</h5>
+  <div class="wrapper-page">
+    <div class="card card-pages shadow-none">
 
-                    <form class="form-horizontal m-t-30" action="index.html">
-
-                        <div class="form-group">
-                            <div class="col-12">
-                                    <label>NIP/NPM</label>
-                                <input class="form-control" type="number" required data-parsley-length="[5,10]" placeholder="NIP/NPM">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-12">
-                                    <label>Password</label>
-                                <input class="form-control" type="password" required="" placeholder="Password">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <div class="col-12">
-                                <label>Role</label>
-                                <select class="form-control">
-                                    <option>--Pilih Role--</option>
-                                    <option>Dosen</option>
-                                    <option>Pimpinan Jurusan</option>
-                                    <option>Pimpinan Fakultas</option>
-                                    <option>Mahasiswa</option>
-                                    <option>Admin</option>
-                                    <option>Operator</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-group text-center m-t-20">
-                            <div class="col-12">
-                                <button class="btn btn-primary btn-block btn-lg waves-effect waves-light" type="submit">Masuk</button>
-                            </div>
-                        </div>
-
-                        <div class="form-group text-center m-t-20">
-                            <div class="col-12">
-                                <p class="text-muted">Unsyiah 2020</p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+      <div class="card-body">
+        <div class="text-center m-t-0 m-b-15">
+          <a href="index.html" class="logo logo-admin"><img
+              src="{{ assetsUrl('staxo/') }}assets/images/logo_unsyiah.png" alt="" height="50"></a>
         </div>
-    <!-- END wrapper -->
+        <h5 class="font-18 text-center">SIM-FEB</h5>
 
-    {{--  ini script  --}}
-    @include('user.partials.script')
-    {{--  ini script  --}}
+        <form class="form-horizontal m-t-30" action="{{route('login.data')}}" method="post">
+          {{ csrfField() }}
+          <div class="form-group">
+            <div class="col-12">
+              <label>NIP/NPM</label>
+              <input class="form-control" name="nip" type="number" required data-parsley-length="[5,10]"
+                placeholder="NIP/NPM">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-12">
+              <label>Password</label>
+              <input class="form-control" name="password" type="password" required="" placeholder="Password">
+            </div>
+          </div>
+          <!--
+          <div class="form-group">
+            <div class="col-12">
+              <label>Role</label>
+              <select class="form-control" name="role">
+                <option>--Pilih Role--</option>
+                <option value="1">Dosen</option>
+                <option value="2">Mahasiswa</option>
+                <option>Pimpinan Jurusan</option>
+                <option>Pimpinan Fakultas</option>
+                <option>Admin</option>
+                <option>Operator</option>
+              </select>
+            </div>
+          </div>
+          -->
+          <br>
+          <div class="form-group text-center m-t-20">
+            <div class="col-12">
+              <button class="btn btn-primary btn-block btn-lg waves-effect waves-light" type="submit">Masuk</button>
+            </div>
+          </div>
+
+          <div class="form-group text-center m-t-20">
+            <div class="col-12">
+              <p class="text-muted">Unsyiah 2020</p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- END wrapper -->
+
+  {{--  ini script  --}}
+  @include('user.partials.script')
+  {{--  ini script  --}}
 
 </body>
 
