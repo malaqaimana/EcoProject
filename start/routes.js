@@ -23,11 +23,11 @@ const Route = use('Route')
 // Route.on('/').render('user.login')
 
 // ROUTE LOGIN
-// Route.get('/', 'login/LoginController.index').as('login.index')
 Route.get('/', 'user/AuthController.show').as('login.index')
-Route.post('/login', 'user/AuthController.login').as('login.data')
-Route.get('/logout', 'user/AuthController.logout').as('logout.akun')
+Route.post('/login', 'user/AuthController.login').as('login.data') 
 
+// ROUTE LOGOUT
+Route.get('/logout', 'user/AuthController.logout').as('logout.akun')
 
 // ROUTE DOSEN
 Route.group(() => {
@@ -50,3 +50,38 @@ Route.group(() => {
   Route.get('/jadwal', 'dosen/JadwalController.index').as('dosen.jadwal.index')
 }).prefix("/dosen")
 .middleware(['auth:dosen'])
+
+// ROUTE DEKAN
+Route.group(() => {
+  Route.get('/', 'dekan/DashboardController.index').as('dekan.index')
+
+}).prefix("/dekan")
+.middleware(['auth:dekan'])
+
+// ROUTE KAJUR
+Route.group(() => {
+  Route.get('/', 'kajur/DashboardController.index').as('kajur.index')
+
+}).prefix("/kajur")
+.middleware(['auth:kajur'])
+
+// ROUTE MAHASISWA
+Route.group(() => {
+  Route.get('/', 'mahasiswa/DashboardController.index').as('mahasiswa.index')
+
+}).prefix("/mahasiswa")
+.middleware(['auth:mahasiswa'])
+
+// ROUTE ADMIN
+Route.group(() => {
+  Route.get('/', 'admin/DashboardController.index').as('admin.index')
+
+}).prefix("/admin")
+.middleware(['auth:admin'])
+
+// ROUTE OPERATOR
+Route.group(() => {
+  Route.get('/', 'operator/DashboardController.index').as('operator.index')
+
+}).prefix("/operator")
+.middleware(['auth:operator'])

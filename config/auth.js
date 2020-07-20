@@ -29,14 +29,49 @@ module.exports = {
   */
   session: {
     serializer: 'lucid',
-    model: 'App/Models/Dosen',
+    model: 'App/Models/Dosen/Dosen',
     scheme: 'session',
     uid: 'nip',
     password: 'password'
   },
   dosen: {
     serializer: 'lucid',
-    model: 'App/Models/Dosen',
+    model: 'App/Models/Dosen/Dosen',
+    scheme: 'session',
+    uid: 'nip',
+    password: 'password'
+  },
+  mahasiswa: {
+    serializer: 'lucid',
+    model: 'App/Models/Mahasiswa/Mahasiswa',
+    scheme: 'session',
+    uid: 'npm',
+    password: 'password'
+  },
+  dekan: {
+    serializer: 'lucid',
+    model: 'App/Models/Dosen/Dosen',
+    scheme: 'session',
+    uid: 'nip',
+    password: 'password'
+  },
+  kajur: {
+    serializer: 'lucid',
+    model: 'App/Models/Dosen/Dosen',
+    scheme: 'session',
+    uid: 'nip',
+    password: 'password'
+  },
+  operator: {
+    serializer: 'lucid',
+    model: 'App/Models/Operator/Operator',
+    scheme: 'session',
+    uid: 'nip',
+    password: 'password'
+  },
+  admin: {
+    serializer: 'lucid',
+    model: 'App/Models/Admin/Admin',
     scheme: 'session',
     uid: 'nip',
     password: 'password'

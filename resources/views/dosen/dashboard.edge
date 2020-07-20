@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-right">
-                                    <li class="breadcrumb-item active"><a href="{{ route('dosen.index') }}">Dosen</a></li>
+                                    <li class="breadcrumb-item active"><a href="{{ route('dosen.index') }}">{{role}}</a></li>
                                 </ol>
                             </div>
                         </div>
@@ -42,9 +42,9 @@
 
                     {{--  carousel kegiatan  --}}
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-xl-12">
                             <div class="card m-b-20">
-                                <div class="card-body">
+                                <div>
                                     <div id="carouselExampleCaption" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -53,21 +53,21 @@
                                         </ol>
                                         <div class="carousel-inner" role="listbox">
                                             <div class="carousel-item active">
-                                                <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-7.jpg" alt="..." class="d-block img-fluid mx-auto">
+                                                <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-7.jpg" alt="..." class="d-block mx-auto" height="250px" width="100%">
                                                 <div class="carousel-caption d-none d-md-block">
-                                                    <h4>First slide label</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <h4>Sistem Informasi Dosen Wali</h4>
+                                                    <p>Untuk memberikan pertimbangan, petunjuk, nasehat dan persetujuan kepada mahasiswa bimbingannya dalam menentukan mata-kuliah yang diambil</p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-5.jpg" alt="..." class="d-block img-fluid mx-auto">
+                                                <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-5.jpg" alt="..." class="d-block mx-auto" height="250px" width="100%">
                                                 <div class="carousel-caption d-none d-md-block">
                                                     <h4>Second slide label</h4>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-4.jpg" alt="..." class="d-block img-fluid mx-auto">
+                                                <img src="{{ assetsUrl('staxo/') }}assets/images/small/img-4.jpg" alt="..." class="d-block mx-auto" height="250px" width="100%">
                                                 <div class="carousel-caption d-none d-md-block">
                                                     <h4>Third slide label</h4>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -88,37 +88,44 @@
                         </div> <!-- end col -->
                     </div>
                     
+                    <!-- TAMPILAN SSO-->
                     <div class="row">
                         <div class="col-12">
                             <div class="card-columns">
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/DosenWali.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Dosen Wali</h4>
+                                            <p class="card-text">Untuk memberikan pertimbangan, petunjuk, nasehat dan persetujuan kepada mahasiswa bimbingannya dalam menentukan mata-kuliah yang diambil</p>
+                                        </div>
+                                    </a>
                                 </div>
                                 
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/fsd.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Dashboard Dosen dan Staf (FSD)</h4>
+                                            <p class="card-text">Semua sivitas akademik Unsyiah melalui apalikasi ini dapat memiliki website pribadi.</p>
+                                        </div>
+                                    </a>
                                 </div>
                                 
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/Keuangan.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Keuangan PNBP</h4>
+                                            <p class="card-text">Simkeu PNBP adalah sistem informasi pengelolaan dana PNBP. Bertujuan agar proses pengusulan & penggunaan dana tercatat secara rapi dan transparan</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -129,33 +136,39 @@
                         <div class="col-12">
                             <div class="card-columns">
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/plo.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Paperless Office (PLO)</h4>
+                                            <p class="card-text">Sebuah media online yang dimanfaatkan oleh segenap sivitas Unsyiah untuk berinteraksi dan berekspresi baik secara individu, unit maupun ke semua sivitas.</p>
+                                        </div>
+                                    </a>
                                 </div>
                                 
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/repositori.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Repository Publikasi Universitas</h4>
+                                            <p class="card-text">Aplikasi untuk melihat perkembangan, menemukan, atau menjadi kontributor data publikasi Unsyiah. Telah mencatat lebih dari 2874 publikasi.</p>
+                                        </div>
+                                    </a>
                                 </div>
                                 
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/simlit3.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Pendaftaran PPs Online</h4>
+                                            <p class="card-text">Aplikasi online untuk melakukan pendaftaran menjadi mahasiswa Unsyiah yang untuk jenjang Pascasarjana (PPs).</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -166,33 +179,39 @@
                         <div class="col-12">
                             <div class="card-columns">
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/simpeg.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Kepegawaian (Simpeg)</h4>
+                                            <p class="card-text">Aplikasi berbasis web yang digunakan untuk menunjang proses administrasi kepegawaian yang bertujuan untuk menciptakn informasi SDM selalu mutakhir.</p>
+                                        </div>
+                                    </a>
                                 </div>
                                 
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/sinekad.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Kinerja dan Evaluasi Dosen (Sinekad)</h4>
+                                            <p class="card-text">Evaluasi dan kinerja dosen diperoleh dan dinilai melalui kuisioner yang diisi oleh mahasiswa yang mengikuti mata kuliah.</p>
+                                        </div>
+                                    </a>
                                 </div>
                                 
                                 <div class="card m-b-30">
-                                    <img class="card-img-top img-fluid" src="{{ assetsUrl('staxo/') }}assets/images/small/img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title font-16 mt-0">Card title that wraps to a new line</h4>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                    </div>
+                                    <a href="https://perwalian.unsyiah.ac.id/">
+                                        <div class="col-md-6 m-t-30" align="center">
+                                            <img class="card-img-top img-fluid" src="{{ assetsUrl('photo/') }}sso/sipkd5.png" height="50%" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title font-16 mt-0">Sistem Informasi Pengevaluasian Kinerja Dosen (SIPKD)</h4>
+                                            <p class="card-text">Layanan untuk membantu mengevaluasi dan melaporkan akuntabilitas kinerja dosen kepada para pemangku kepentingan.</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
